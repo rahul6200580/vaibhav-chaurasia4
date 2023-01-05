@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation bar</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body bgcolor="gray">
+  <h1>Tourism Bihar</h1>
+  <nav>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="About US .html">About Us</a></li>
+    <li><a href="#">Service</a></li>
+    <li><a href="#">Tourism</a></li>
+    <li><a href="#">Destination</a></li>
+    <li><a href="#">Hotels</a></li>
+  </nav>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="77.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="khf.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="llll.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+  <h2>Tourism Bihar</h2>
+  <p>
+    Bihar Tourism is the initiative of the Ministry of Tourism, Bihar Government to promote and incentivise the tourism
+    opportunities in the state. The fundamental activities of the department include developing the conditions and
+    infrastructure to make the state conducive to travel and tourism. In addition, Bihar Tourism is also focussed on
+    helping tourists find destinations, routes and experiences that are to their liking. Whether it is in the form of
+    circuits that cover a specific set of spiritual, natural, or historical places, or different types of food and
+    festivals, Bihar Tourism offers something for everyone.
+
+    From helping tourists plan and book their travel and stay to ensuring they experience the beauty and culture of
+    Bihar without missing anything from their itinerary, Bihar Tourism is a friend for all tourists of the state.
+    Arrange your transportation and stays conveniently at every stop of your travel route with Bihar Tourism. Get
+    relevant and reliable information about your destinations.
+  </p>
+  <h2>Useful</h2>
+  <div class="footer">
+    <div class="col-1">
+      <h3>Quick Response</h3>
+      <a href="Home.html">Home</a>
+      <a href="About Us.html">About Us</a>
+      <a href="#"> Service</a>
+      <a href="#">Ordered</a>
+      <a href="#">Idea</a>
+    </div>
+    <div class="col-1">
+      <h3>Useful Link</h3>
+      <a href="college.html">College</a>
+      <a href="#">Facebook</a>
+      <a href="https://www.google.com/">Google</a>
+      <a href="https://www.google.com/intl/en_in/chrome/">Chrome</a>
+      <a href="#">Whatsapp</a>
+    </div>
+    <div class="col-1">
+      <h3>Orderd</h3>
+      <a href="#">Gallery</a>
+      <a href="#">Album</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">Teligram</a>
+    </div>
+  </div>
+
+
+  <div style="background-color:#f1f1f1;padding:15px;">
+    <h1>Cinque Terre</h1>
+    <h3>Resize the browser window</h3>
+  </div>
+
+  <div style="overflow:auto">
+    <div class="menu">
+      <div class="menuitem">The Walk</div>
+      <div class="menuitem">Transport</div>
+      <div class="menuitem">History</div>
+      <div class="menuitem">Gallery</div>
+    </div>
+
+    <div class="main">
+      <h2>The Walk</h2>
+      <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending
+        on the weather conditions and your physical shape.</p>
+      <img src="img_5terre.jpg" style="width:100%">
+    </div>
+
+    <div class="right">
+      <h2>What?</h2>
+      <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+      <h2>Where?</h2>
+      <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+      <h2>Price?</h2>
+      <p>The Walk is free!</p>
+    </div>
+  </div>
+
+
+  <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is
+    a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content
+    respond to the resizing.</div>
+  <nav>
+    <div id="tt">
+      <img src="image/Untitled_4-removebg-preview.png" alt="logo" srcset="">
+
+
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="order.html">ORDER</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+
+
+
+    </ul>
+  </nav>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: blue;
+            font-size: xx-large;
+        }
+
+        h2 {
+            text-align: center;
+            color: red;
+            font-size: 100px;
+            background-color: yellow;
+            border: 5px solid black;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            animation-duration: 4s;
+            animation-name: example;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: green;
+            }
+
+            50% {
+                background-color: yellow;
+            }
+
+            75% {
+                background-color: blueviolet;
+            }
+
+            100% {
+                background-color: chocolate;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .menu {
+                float: left;
+                width: 20%;
+            }
+
+            .menuitem {
+                padding: 8px;
+                margin-top: 7px;
+                border-bottom: 1px solid #f1f1f1;
+            }
+
+            .main {
+                float: left;
+                width: 60%;
+                padding: 0 20px;
+                overflow: hidden;
+            }
+
+            .right {
+                background-color: lightblue;
+                float: left;
+                width: 20%;
+                padding: 10px 15px;
+                margin-top: 7px;
+            }
+
+            @media only screen and (max-width:800px) {
+
+                /* For tablets: */
+                .main {
+                    width: 80%;
+                    padding: 0;
+                }
+
+                .right {
+                    width: 100%;
+                }
+            }
+
+            @media only screen and (max-width:500px) {
+
+                /* For mobile phones: */
+                .menu,
+                .main,
+                .right {
+                    width: 100%;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <h1>About Us</h1>
+    <h2>Bihar Tourism</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, ipsam voluptatem. Rem sapiente sint, neque cum
+        necessitatibus deserunt laudantium labore odio optio. Tempore dolorum enim qui voluptates, eaque totam
+        necessitatibus natus nihil vero libero incidunt unde praesentium quisquam consequatur veniam, nemo illo numquam,
+        quia maiores temporibus officia doloribus ipsum iure. Sed officiis laudantium enim autem commodi reiciendis
+        debitis vitae neque repellat soluta, perspiciatis sunt animi iusto obcaecati beatae! Aperiam, praesentium saepe?
+        Provident optio maiores temporibus at quam reprehenderit accusantium totam rem minima culpa maxime excepturi
+        delectus, ad id nemo magni deleniti sunt consequatur porro ducimus recusandae. Id facere ducimus velit
+        doloremque ad, accusamus inventore nulla. Porro provident voluptatibus minima aut tempora praesentium eaque
+        facilis consequatur fuga sint officiis maxime dolore nemo reiciendis aliquam nostrum doloremque sunt optio
+        delectus, doloribus magni laudantium adipisci quas corporis? Ipsam, reprehenderit blanditiis? Velit quis atque
+        impedit voluptatum dignissimos corporis hic, aperiam sunt, delectus sequi enim, error molestias obcaecati
+        possimus quam rerum quos ut. Mollitia, asperiores numquam et quibusdam non corporis cum hic facilis voluptatibus
+        eaque adipisci cupiditate nam doloribus dolorum maiores, repellendus at aliquam porro optio id. Doloribus
+        sapiente facilis itaque amet velit autem ullam necessitatibus laboriosam! Quo dolor blanditiis laborum rem
+        dolores, commodi non quas fugit nostrum harum vel aut illo modi? Dolor cum quibusdam consequuntur quam eveniet
+        vero necessitatibus quaerat, magnam repellat, perferendis dolores molestias debitis quod, corrupti illo. Dolorum
+        est iste ducimus ab odit inventore sed eaque expedita suscipit cumque soluta tempore voluptates molestias eius
+        aspernatur, ut illo deserunt. Eaque, molestias incidunt repudiandae et aliquid similique impedit qui eum ipsum
+        quisquam esse quibusdam sed dicta, itaque hic quos ducimus, dolorem temporibus. Ab repellat harum vel enim unde
+        sequi dolor eos quae possimus voluptatem minus error porro, libero dolorem molestias magnam consequuntur ipsa
+        praesentium quis corporis architecto nam et perferendis reprehenderit! Iusto, placeat. Quos corrupti in
+        accusantium nostrum recusandae sint iure itaque molestiae reiciendis nulla quibusdam officia, eligendi suscipit
+        quaerat voluptate soluta veniam culpa neque earum veritatis ad mollitia quod? Quia dolore consectetur ipsam
+        fugit consequuntur, voluptatum dicta velit? Natus similique perferendis obcaecati optio quis, saepe recusandae
+        molestias amet nam praesentium! Iusto quo accusamus laboriosam dolor omnis, dolorum, quasi est rem, veritatis
+        repudiandae aspernatur mollitia nulla aperiam voluptatum perferendis quae sed voluptas beatae. Aut fugiat
+        placeat nemo nisi ea totam voluptas fugit deleniti hic? Fugiat totam distinctio cupiditate unde blanditiis at
+        molestias et, quos excepturi facere. Asperiores suscipit a quam quos iste incidunt!</p>
+</body>
+
+<div style="background-color:#f1f1f1;padding:15px;">
+    <h1>Cinque Terre</h1>
+    <h3>Resize the browser window</h3>
+</div>
+
+<div style="overflow:auto">
+    <div class="menu">
+        <div class="menuitem">The Walk</div>
+        <div class="menuitem">Transport</div>
+        <div class="menuitem">History</div>
+        <div class="menuitem">Gallery</div>
+    </div>
+
+    <div class="main">
+        <h2>The Walk</h2>
+        <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending
+            on the weather conditions and your physical shape.</p>
+        <img src="img_5terre.jpg" style="width:100%">
+    </div>
+
+    <div class="right">
+        <h2>What?</h2>
+        <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+        <h2>Where?</h2>
+        <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+        <h2>Price?</h2>
+        <p>The Walk is free!</p>
+    </div>
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a
+    part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content
+    respond to the resizing.</div>
+
+</html>
